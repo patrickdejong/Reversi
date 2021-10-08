@@ -1,0 +1,62 @@
+﻿@model ReversiApp.Models.Speler
+
+@{
+    ViewData["Title"] = "Create";
+}
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="~/css/site.css" />
+<body style="background: black; color:white">
+    <h1>Create a new account</h1>
+
+    <h4>Enter your details here:</h4>
+    <hr />
+
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <label asp-for="Naam">Username: </label>
+                <input asp-for="Naam" id="Naam" name="Naam" type="text" placeholder="Name" required><br />
+                <span asp-validation-for="Naam" class="text-danger"></span>
+
+                <label asp-for="Email">Email-Address:</label>
+                <input asp-for="Email" id="email" name="email" type="email" placeholder="example@gmail.com" required><br />
+                <span asp-validation-for="Email" class="text-danger"></span><br />
+
+                <label style="color:orange">Make sure your passwords has at least:</label>
+                <list>
+                    <ul>1 Capital letter (eg. A,B,C,...,Z)</ul>
+                </list>
+                <list>
+                    <ul>1 Lowercase letter (eg. a,b,c,...,z)</ul>
+                </list>
+                <list>
+                    <ul>1 Number (eg. 1,2,3,...,9)</ul>
+                </list>
+                <list>
+                    <ul>At least 8 characters (********)</ul>
+                </list>
+                <label asp-for="Password">Password: </label>
+                <input asp-for="Password" id="password" type="password" name="password" placeholder="********" required><br />
+                <span asp-validation-for="Password" class="text-danger"></span>
+
+                <label for="password2">Verify password: </label>
+                <input id="password2" type="password" name="password2" placeholder="********" required><br />
+                <span asp-validation-for="Password" class="text-danger"></span>
+
+                <input asp-for="SpelID" id="SpelID" type="number" name="SpelID" value="1" hidden><br />
+                <span asp-validation-for="SpelID" class="text-danger"></span>
+
+                <input type="submit" value="Create" />
+            </form>
+        </div>
+    </div>
+
+    <div>
+        <a asp-action="Index">Back to Login page</a>
+    </div>
+</body>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,49 @@
+﻿@model IEnumerable<ReversiApp.Models.Spel>
+
+@{
+    ViewData["Title"] = "Menu";
+}
+
+<h1>Welcome to Reversi!</h1>
+<h4>
+    You are not in a game yet. Don't worry you can start one right here!
+</h4><br />
+<h4><a asp-action="CreateNewGame">Start new game</a></h4>
+<br /><br />
+<h5>You can also join a game!</h5>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Omschrijving)
+                </th>
+                <th>
+                    Opponent
+                </th>
+                <th>
+
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model) {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Omschrijving)
+                </td>
+                @foreach (Speler speler in item.Spelers) {
+                    <th>
+                        @speler.Naam
+                    </th>
+                }
+                <td>
+                    <form asp-action="JoinGame">
+                        <input id="spelid" name="spelid" value="@item.ID" hidden>
+                        <button type="submit">Join game</button>
+                    </form>
+                </td>
+
+            </tr>
+            }
+        </tbody>
+    </table>

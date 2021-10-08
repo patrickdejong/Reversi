@@ -1,0 +1,15 @@
+﻿@model ReversiApp.Models.Speler
+
+@{
+    ViewData["Title"] = "Login";
+}
+<h1>Log in succesvol :D</h1>
+
+<h4>Welkom @Model.Naam!</h4>
+<a asp-action="Edit" asp-route-id="@Model.Id">Click here to change your password.</a>
+<h5>Je zit gekoppeld aan het spel met SpelID: @Model.SpelID</h5>
+
+<script>
+    
+</script>
+

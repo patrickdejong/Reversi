@@ -1,0 +1,18 @@
+﻿@model IEnumerable<ReversiApp.Models.Speler>
+@{
+    ViewData["Title"] = "Index";
+}
+    <body style="background: black; color:white">
+        <h1>Login or create a new account!</h1>
+        <form asp-action="Login">
+            <label for="email">Username: </label>
+            <input id="username" name="email" type="email" placeholder="your@email.com">
+            <label>Password: </label>
+            <input id="password" type="password" name="password">
+            <input type="submit" value="Login" />
+        </form>
+        <br />
+        <p>
+            <a asp-action="Create">>>> Create a new account <<<</a>
+        </p>
+    </body>

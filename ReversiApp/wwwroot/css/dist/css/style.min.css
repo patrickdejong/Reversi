@@ -1,0 +1,163 @@
+body {
+  background-color: lightgrey; }
+
+td {
+  border: 3px solid black;
+  height: 75px;
+  width: 75px; }
+
+td:hover {
+  background-color: dodgerblue; }
+
+.fiche--zwart {
+  background-color: white;
+  height: 70px;
+  width: 70px;
+  opacity: 80%;
+  border: 2px solid black;
+  border-radius: 50%;
+  margin-left: 1px;
+  background: linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px, linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px, linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px, linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px, linear-gradient(90deg, #1b1b1b 10px, transparent 10px), linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+  background-color: #131313;
+  background-size: 20px 20px;
+  -webkit-animation: plaatsFiche 1.5s;
+  animation: plaatsFiche 1.5s; }
+
+.fiche--zwart-static {
+  background-color: white;
+  height: 70px;
+  width: 70px;
+  opacity: 80%;
+  border: 2px solid black;
+  border-radius: 50%;
+  margin-left: 1px;
+  background: linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px, linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px, linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px, linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px, linear-gradient(90deg, #1b1b1b 10px, transparent 10px), linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+  background-color: #131313;
+  background-size: 20px 20px; }
+
+.fiche--wit {
+  background-color: white;
+  height: 70px;
+  width: 70px;
+  opacity: 80%;
+  border: 2px solid black;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ECEDDC 25%, transparent 25%) -50px 0, linear-gradient(225deg, #ECEDDC 25%, transparent 25%) -50px 0, linear-gradient(315deg, #ECEDDC 25%, transparent 25%), linear-gradient(45deg, #ECEDDC 25%, transparent 25%);
+  background-size: 15% 20%;
+  background-color: #EC173A;
+  -webkit-animation: plaatsFiche 1.5s;
+  animation: plaatsFiche 1.5s; }
+
+.fiche--wit-static {
+  background-color: white;
+  height: 70px;
+  width: 70px;
+  opacity: 80%;
+  border: 2px solid black;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ECEDDC 25%, transparent 25%) -50px 0, linear-gradient(225deg, #ECEDDC 25%, transparent 25%) -50px 0, linear-gradient(315deg, #ECEDDC 25%, transparent 25%), linear-gradient(45deg, #ECEDDC 25%, transparent 25%);
+  background-size: 15% 20%;
+  background-color: #EC173A; }
+
+@-webkit-keyframes plaatsFiche {
+  0% {
+    opacity: 0%;
+    transform: translate3d(0, -30px, 0); }
+  100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 80%; } }
+
+@keyframes plaatsFiche {
+  0% {
+    opacity: 0%;
+    transform: translate3d(0, -30px, 0); }
+  100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 80%; } }
+
+.header--state-success {
+  margin: 5px 10%;
+  padding-left: 20%;
+  padding-top: 20px;
+  height: 70px;
+  background-color: #5af542;
+  border-radius: 20px;
+  color: darkgreen;
+  -webkit-animation: fadeIn 2.5s;
+  animation: fadeIn 2.5s; }
+
+button {
+  margin-right: 5px;
+  border-radius: 10px;
+  border-color: aliceblue;
+  background-color: lightblue; }
+
+.button--exit {
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-right: 20px; }
+
+.img--icon-success {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px; }
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.container {
+  display: flex;
+  width: 600px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ededed; }
+
+.button--accept {
+  font-weight: bold;
+  -webkit-animation-name: bibber;
+  animation-name: bibber;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-iteration-count: 8;
+  animation-iteration-count: 8; }
+
+@-webkit-keyframes bibber {
+  50% {
+    transform: scale(1.075); } }
+
+@keyframes bibber {
+  50% {
+    transform: scale(1.075); } }
+
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 8px; }
+  img {
+    display: none; }
+  #feedback-success {
+    padding-top: 10px;
+    padding-left: 10%; }
+  button {
+    margin-right: 50%;
+    margin-top: 2px; } }
+
+footer {
+  text-align: center;
+  horiz-align: center;
+  margin-top: 15px; }
+
+.canvas--class {
+  width: 300px !important;
+  height: 500px !important; }
