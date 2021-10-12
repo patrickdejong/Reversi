@@ -122,44 +122,58 @@
     </footer>
 
     <script>
-        var whiteStones = Game.Stats.getWhiteStones(@Model.Token);
-        var blackStones = Game.Stats.getBlackStones(@Model.Token);
-        var ctx = document.getElementById('myChart').getContext('2d');
-        var myChart = new Chart(ctx, {
-            type: 'bar',
-            data: {
-                labels: ['White', 'Black'],
-                datasets: [{
-                    label: '# of Pieces',
-                    data: [whiteStones, 0],
-                    backgroundColor: [
-                        'rgba(255, 255, 255, 0.8)',
-                        'rgba(0, 0, 0, 0.6)'
-                    ],
-                    borderColor: [
-                        'rgba(0, 0, 0, 1)',
-                        'rgba(255, 255, 255, 1)'
-                    ],
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                scales: {
-                    yAxes: [{
-                        ticks: {
-                            beginAtZero: true,
-                            userCallback: function (label, index, labels) {
-                                // when the floored value is the same as the value we have a whole number
-                                if (Math.floor(label) === label) {
-                                    return label;
-                                }
+        $(document).ready(function () {
+            function sleep(ms) {
+                return new Promise(resolve => setTimeout(resolve, ms));
+            }
+            sleep(1000);
+            var myChart;
+
+            Game.Stats.getBlackStones("@Model.Token").then(blackStonesCount => {
+                Game.Stats.getWhiteStones("@Model.Token").then(whiteStoneCount => {
+                    console.log("whiteStones = ", whiteStoneCount, ", blackStones = " + blackStonesCount);
+
+                    var ctx = document.getElementById('myChart').getContext('2d');
+                    myChart = new Chart(ctx, {
+                        type: 'bar',
+                        data: {
+                            labels: ['White', 'Black'],
+                            datasets: [{
+                                label: '# of Pieces',
+                                data: [whiteStoneCount, blackStonesCount],
+                                backgroundColor: [
+                                    'rgba(255, 255, 255, 0.8)',
+                                    'rgba(0, 0, 0, 0.6)'
+                                ],
+                                borderColor: [
+                                    'rgba(0, 0, 0, 1)',
+                                    'rgba(255, 255, 255, 1)'
+                                ],
+                                borderWidth: 1
+                            }]
+                        },
+                        options: {
+                            responsive: true,
+                            maintainAspectRatio: false,
+                            scales: {
+                                yAxes: [{
+                                    ticks: {
+                                        beginAtZero: true,
+                                        userCallback: function (label, index, labels) {
+                                            // when the floored value is the same as the value we have a whole number
+                                            if (Math.floor(label) === label) {
+                                                return label;
+                                            }
+                                        }
+                                    }
+                                }]
                             }
                         }
-                    }]
-                }
-            }
+                    });
+                });
+
+
+            });
         });
     </script>
 

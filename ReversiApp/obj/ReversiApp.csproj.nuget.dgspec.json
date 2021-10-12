@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\patri\\source\\repos\\ReversiRestApi\\ReversiApp\\ReversiApp.csproj": {}
+    "C:\\Users\\patri\\Documents\\GitHub\\Reversi\\ReversiApp\\ReversiApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\patri\\source\\repos\\ReversiRestApi\\ReversiApp\\ReversiApp.csproj": {
+    "C:\\Users\\patri\\Documents\\GitHub\\Reversi\\ReversiApp\\ReversiApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\patri\\source\\repos\\ReversiRestApi\\ReversiApp\\ReversiApp.csproj",
+        "projectUniqueName": "C:\\Users\\patri\\Documents\\GitHub\\Reversi\\ReversiApp\\ReversiApp.csproj",
         "projectName": "ReversiApp",
-        "projectPath": "C:\\Users\\patri\\source\\repos\\ReversiRestApi\\ReversiApp\\ReversiApp.csproj",
+        "projectPath": "C:\\Users\\patri\\Documents\\GitHub\\Reversi\\ReversiApp\\ReversiApp.csproj",
         "packagesPath": "C:\\Users\\patri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\patri\\source\\repos\\ReversiRestApi\\ReversiApp\\obj\\",
+        "outputPath": "C:\\Users\\patri\\Documents\\GitHub\\Reversi\\ReversiApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -30,8 +30,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\patri\\source\\repos\\ReversiRestApi\\ReversiRestApi\\ReversiRestApi.csproj": {
-                "projectPath": "C:\\Users\\patri\\source\\repos\\ReversiRestApi\\ReversiRestApi\\ReversiRestApi.csproj"
+              "C:\\Users\\patri\\Documents\\GitHub\\Reversi\\ReversiRestApi\\ReversiRestApi.csproj": {
+                "projectPath": "C:\\Users\\patri\\Documents\\GitHub\\Reversi\\ReversiRestApi\\ReversiRestApi.csproj"
               }
             }
           }
@@ -86,14 +86,14 @@
         }
       }
     },
-    "C:\\Users\\patri\\source\\repos\\ReversiRestApi\\ReversiRestApi\\ReversiRestApi.csproj": {
+    "C:\\Users\\patri\\Documents\\GitHub\\Reversi\\ReversiRestApi\\ReversiRestApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\patri\\source\\repos\\ReversiRestApi\\ReversiRestApi\\ReversiRestApi.csproj",
+        "projectUniqueName": "C:\\Users\\patri\\Documents\\GitHub\\Reversi\\ReversiRestApi\\ReversiRestApi.csproj",
         "projectName": "ReversiRestApi",
-        "projectPath": "C:\\Users\\patri\\source\\repos\\ReversiRestApi\\ReversiRestApi\\ReversiRestApi.csproj",
+        "projectPath": "C:\\Users\\patri\\Documents\\GitHub\\Reversi\\ReversiRestApi\\ReversiRestApi.csproj",
         "packagesPath": "C:\\Users\\patri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\patri\\source\\repos\\ReversiRestApi\\ReversiRestApi\\obj\\",
+        "outputPath": "C:\\Users\\patri\\Documents\\GitHub\\Reversi\\ReversiRestApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

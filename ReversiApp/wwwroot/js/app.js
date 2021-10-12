@@ -289,7 +289,7 @@ Game.Stats = new function () {
 
   var getWhiteStones = function getWhiteStones(token) {
     var url = gameURL + token;
-    Game.Data.get(url).then(function (gameData) {
+    return Game.Data.get(url).then(function (gameData) {
       var bord = gameData.bord;
 
       if (bord !== undefined) {
@@ -308,9 +308,10 @@ Game.Stats = new function () {
 
         if (AmountWhiteStones > 0) {
           console.log("White stones: " + AmountWhiteStones);
-          weReturnAnIntHere(AmountWhiteStones);
+          return AmountWhiteStones;
         } else {
           console.log("No white stones were found...");
+          return 0;
         }
       }
     })["catch"](function (e) {
@@ -318,13 +319,9 @@ Game.Stats = new function () {
     });
   };
 
-  var weReturnAnIntHere = function weReturnAnIntHere(x) {
-    return x;
-  };
-
   var getBlackStones = function getBlackStones(token) {
     var url = gameURL + token;
-    Game.Data.get(url).then(function (gameData) {
+    return Game.Data.get(url).then(function (gameData) {
       var bord = gameData.bord;
 
       if (bord !== "undefined") {
@@ -346,6 +343,7 @@ Game.Stats = new function () {
           return Number(AmountBlackStones);
         } else {
           console.log("No black stones were found...");
+          return 0;
         }
       }
     })["catch"](function (e) {

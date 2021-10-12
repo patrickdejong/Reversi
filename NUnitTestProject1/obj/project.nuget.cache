@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nlLVUTUT+5TwZEbrnzPjLcZ9IetfxhFwlgjDJFTLpvmcre343rJf5lk0zL9kIASfyUJlHcfSlq3NeSYezfcjYQ==",
+  "dgSpecHash": "gce10MFx4TdZyGSEj4f7yXPlkKFm+vIW2ZqJD/j2Or0GeLHiKZlrqiir4qx7u9qwWjoRUp4ueeSl49ujambPfA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\patri\\source\\repos\\ReversiRestApi\\NUnitTestProject1\\NUnitTestProject1.csproj",
+  "projectFilePath": "C:\\Users\\patri\\Documents\\GitHub\\Reversi\\NUnitTestProject1\\NUnitTestProject1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\patri\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\patri\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",

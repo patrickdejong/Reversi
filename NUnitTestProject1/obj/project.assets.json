@@ -8512,11 +8512,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\patri\\source\\repos\\ReversiRestApi\\NUnitTestProject1\\NUnitTestProject1.csproj",
+      "projectUniqueName": "C:\\Users\\patri\\Documents\\GitHub\\Reversi\\NUnitTestProject1\\NUnitTestProject1.csproj",
       "projectName": "NUnitTestProject1",
-      "projectPath": "C:\\Users\\patri\\source\\repos\\ReversiRestApi\\NUnitTestProject1\\NUnitTestProject1.csproj",
+      "projectPath": "C:\\Users\\patri\\Documents\\GitHub\\Reversi\\NUnitTestProject1\\NUnitTestProject1.csproj",
       "packagesPath": "C:\\Users\\patri\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\patri\\source\\repos\\ReversiRestApi\\NUnitTestProject1\\obj\\",
+      "outputPath": "C:\\Users\\patri\\Documents\\GitHub\\Reversi\\NUnitTestProject1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -8535,8 +8535,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\patri\\source\\repos\\ReversiRestApi\\ReversiApp\\ReversiApp.csproj": {
-              "projectPath": "C:\\Users\\patri\\source\\repos\\ReversiRestApi\\ReversiApp\\ReversiApp.csproj"
+            "C:\\Users\\patri\\Documents\\GitHub\\Reversi\\ReversiApp\\ReversiApp.csproj": {
+              "projectPath": "C:\\Users\\patri\\Documents\\GitHub\\Reversi\\ReversiApp\\ReversiApp.csproj"
             }
           }
         }
